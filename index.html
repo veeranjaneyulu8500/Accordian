@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accordian</title>
+
+    <style>
+        .item{
+            height: 33px;
+            color: green;
+            
+        }
+
+        .accordian{
+            width: 700px;
+            margin: 100px auto;
+            display: flex;
+            flex-direction: column;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            column-gap: 20px;
+            row-gap: 20px;
+            align-items: center;
+            box-shadow: 0 10px 10px 0 black;
+            padding-left: 10px;
+            padding-right: 10px;
+            
+            
+        }
+
+        .hidden-box {
+            grid-column: 2/3;
+            
+           
+        
+        }
+
+        .hidden-box ul{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .number, .text{
+            color: green;
+            font-weight:bold;
+            font-size: 22px;
+            
+
+        }
+
+        .para{
+            width: 470px;
+        }
+    </style>
+</head>
+<body>
+<article class="accordian">
+
+    <div class="number">
+        <h1>01</h1>
+        </div>
+        
+        <div class="text">
+            <h1>some movies in which hero died</h1>
+        </div>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="item">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+    
+    <span class="hidden-box">
+        <div class="para">
+
+            <p>hero died because hero's character died in script.
+                hero's charcter died in script because writer wrote as hero died. 
+                if hero doest die, it means hero doesn't die.</p>
+            </div>
+            
+            <ul>
+                <li>hero konchina khastam</li>
+                <li>swargam lo hero</li>
+                <li>hero leni heroine</li>
+                <li>hero poyadu</li>
+            </ul>   
+    </span>
+            
+</article>
+
+<article class="accordian">
+
+    <div class="number">
+        <h1>01</h1>
+        </div>
+        
+        <div class="text">
+            <h1>some movies in which hero died</h1>
+        </div>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="item">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+            </svg>
+    
+    <span class="hidden-box">
+        <p>hero died because hero's character died in script.
+            hero's charcter died in script because writer wrote as hero died. 
+            if hero doest die, it means hero doesn't die.</p>
+            
+            <ul>
+                <li>hero konchina khastam</li>
+                <li>swargam lo hero</li>
+                <li>hero leni heroine</li>
+                <li>hero poyadu</li>
+            </ul>   
+    </span>
+            
+</article>
+</body>
+</html>
+
+
